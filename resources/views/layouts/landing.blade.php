@@ -78,7 +78,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <div class="container">
         <div class="row centered">
             <div class="col-lg-12">
-                <h1>Ficha Electroónica</a></b></h1>
+                <h1>Ficha Electrónica</a></b></h1>
                 <h3>Plataforma para captura de información. 
                 <br><a href="https://almsaeedstudio.com/preview">EjemploDeLink</a> 
                 <br>Landing page</h3>
