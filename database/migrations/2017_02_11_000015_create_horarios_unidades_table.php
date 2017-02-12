@@ -15,7 +15,7 @@ class CreateHorariosUnidadesTable extends Migration
         Schema::create('horarios_unidades', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('unidade_id')->unsigned();
-            $table->string('dia', 45)->nullable();
+            $table->enum('dia', ['Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab', 'Dom']);
             $table->string('entrada', 45)->nullable();
             $table->string('salida', 45)->nullable();
             $table->string('medio_dia_cierra', 45)->nullable();
