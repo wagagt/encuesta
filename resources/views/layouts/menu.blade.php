@@ -66,3 +66,11 @@
     <a href="{!! route('tipoPasos.index') !!}"><i class="fa fa-edit"></i><span>TipoPasos</span></a>
 </li>
 
+<li class="{{ Request::is('pasos*') ? 'active' : '' }}">
+    <a href="{!! route('pasos.index') !!}"><i class="fa fa-edit"></i><span>Pasos</span></a>
+</li>
+
+<li class="{{ Request::is('procedimientos*') ? 'active' : '' }}">
+    <a href="{!! route('procedimientos.index') !!}"><i class="fa fa-edit"></i><span>Procedimientos</span></a>
+</li>
+
