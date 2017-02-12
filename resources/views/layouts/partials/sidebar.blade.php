@@ -42,19 +42,22 @@
                         <a href="{!! route('institucions.index') !!}"><i class="fa fa-edit"></i><span>Instituciones</span></a>
                     </li>
                     <li class="{{ Request::is('documentosInstitucions*') ? 'active' : '' }}">
-                        <a href="{!! route('documentosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>Inst-Documentos</span></a>
+                        <a href="{!! route('documentosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>..Inst-Documentos</span></a>
                     </li>
                     <li class="{{ Request::is('contactosInstitucions*') ? 'active' : '' }}">
-                        <a href="{!! route('contactosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>Inst-Contactos</span></a>
+                        <a href="{!! route('contactosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>..Inst-Contactos</span></a>
                     </li>
                     <li class="{{ Request::is('horariosInstitucions*') ? 'active' : '' }}">
-                        <a href="{!! route('horariosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>Inst-Horarios</span></a>
+                        <a href="{!! route('horariosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>..Inst-Horarios</span></a>
                     </li>
                     <li class="{{ Request::is('unidads*') ? 'active' : '' }}">
                         <a href="{!! route('unidads.index') !!}"><i class="fa fa-edit"></i><span>Unidades</span></a>
                     </li>
                     <li class="{{ Request::is('documentosUnidads*') ? 'active' : '' }}">
-                        <a href="{!! route('documentosUnidads.index') !!}"><i class="fa fa-edit"></i><span>Unidad-Documentos</span></a>
+                        <a href="{!! route('documentosUnidads.index') !!}"><i class="fa fa-edit"></i><span>..Unidad-Documentos</span></a>
+                    </li>
+                    <li class="{{ Request::is('areas*') ? 'active' : '' }}">
+                        <a href="{!! route('areas.index') !!}"><i class="fa fa-edit"></i><span>..Areas</span></a>
                     </li>
                 </ul>
             </li>
