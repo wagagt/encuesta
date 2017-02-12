@@ -34,3 +34,5 @@ Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
 
 
 Route::resource('institucions', 'InstitucionController');
+
+Route::resource('documentosInstitucions', 'DocumentosInstitucionController');

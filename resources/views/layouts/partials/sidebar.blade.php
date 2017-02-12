@@ -36,10 +36,14 @@
             <li class="active"><a href="{{ url('home') }}"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.home') }}</span></a></li>
             <li><a href="#"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.anotherlink') }}</span></a></li>
             <li class="treeview">
-                <a href="#"><i class='fa fa-link'></i> <span>{{ trans('adminlte_lang::message.multilevel') }}</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <a href="#"><i class='fa fa-link'></i> <span>Catálogos</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">{{ trans('adminlte_lang::message.linklevel2') }}</a></li>
-                    <li><a href="#">{{ trans('adminlte_lang::message.linklevel2') }}</a></li>
+                    <li class="{{ Request::is('institucions*') ? 'active' : '' }}">
+                        <a href="{!! route('institucions.index') !!}"><i class="fa fa-edit"></i><span>Instituciones</span></a>
+                    </li>
+                    <li class="{{ Request::is('documentosInstitucions*') ? 'active' : '' }}">
+                        <a href="{!! route('documentosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>DocumentosInstitucions</span></a>
+                    </li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->
