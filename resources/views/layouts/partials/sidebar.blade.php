@@ -81,11 +81,19 @@
                         <a href="{!! route('baseLegals.index') !!}"><i class="fa fa-edit"></i><span>.....Serv-BaseLegal</span></a>
                     </li>
                     <li class="{{ Request::is('tipoPresencias*') ? 'active' : '' }}">
-                        <a href="{!! route('tipoPresencias.index') !!}"><i class="fa fa-edit"></i><span>TipoPresencias</span></a>
+                        <a href="{!! route('tipoPresencias.index') !!}"><i class="fa fa-edit"></i><span>Pasos</span></a>
+                    </li>
+                                
+                    <li class="{{ Request::is('tipoPresencias*') ? 'active' : '' }}">
+                        <a href="{!! route('tipoPresencias.index') !!}"><i class="fa fa-edit"></i><span>.....Tipo Presencias</span></a>
                     </li>
                     <li class="{{ Request::is('baseLegalCostos*') ? 'active' : '' }}">
-                        <a href="{!! route('baseLegalCostos.index') !!}"><i class="fa fa-edit"></i><span>BaseLegalCostos</span></a>
+                        <a href="{!! route('baseLegalCostos.index') !!}"><i class="fa fa-edit"></i><span>.....Base Legal Costos</span></a>
                     </li>
+                    <li class="{{ Request::is('tipoPasos*') ? 'active' : '' }}">
+                        <a href="{!! route('tipoPasos.index') !!}"><i class="fa fa-edit"></i><span>.....Tipo Pasos</span></a>
+                    </li>
+
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->
