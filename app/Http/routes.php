@@ -54,3 +54,5 @@ Route::resource('areaUnidads', 'AreaUnidadController');
 Route::resource('areaSpecs', 'Area_SpecController');
 
 Route::resource('puestos', 'PuestoController');
+
+Route::resource('requisitosPuestos', 'RequisitosPuestoController');

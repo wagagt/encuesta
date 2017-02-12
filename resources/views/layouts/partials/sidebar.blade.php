@@ -68,6 +68,9 @@
                     <li class="{{ Request::is('puestos*') ? 'active' : '' }}">
                         <a href="{!! route('puestos.index') !!}"><i class="fa fa-edit"></i><span>Puestos</span></a>
                     </li>
+                    <li class="{{ Request::is('requisitosPuestos*') ? 'active' : '' }}">
+                        <a href="{!! route('requisitosPuestos.index') !!}"><i class="fa fa-edit"></i><span>.. Puestos-Requisitos</span></a>
+                    </li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->

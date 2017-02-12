@@ -21,6 +21,7 @@ class CreatePuestosTable extends Migration
             $table->string('reporta_a', 100)->nullable();
             $table->mediumText('objetivo')->nullable();
             $table->string('supervisa_a', 100)->nullable();
+            $table->timestamps();
 
             $table->foreign('unidade_id')->references('id')->on('unidades')->onDelete('no action')->onUpdate('no action');
         });

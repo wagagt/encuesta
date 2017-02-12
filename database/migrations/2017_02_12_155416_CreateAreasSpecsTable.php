@@ -20,6 +20,7 @@ class CreateAreasSpecsTable extends Migration
             $table->enum('evaluacion_criterio2', ['1','2','3','4','5'])->nullable();
             $table->string('foto_ubicacion', 100)->nullable();
             $table->mediumText('notas')->nullable();
+            $table->timestamps();
 
             $table->foreign('area_id')->references('id')->on('areas')->onDelete('no action')->onUpdate('no action');
         });
