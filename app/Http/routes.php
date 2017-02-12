@@ -48,3 +48,7 @@ Route::resource('documentosUnidads', 'DocumentosUnidadController');
 Route::resource('horariosUnidads', 'HorariosUnidadController');
 
 Route::resource('areas', 'AreaController');
+
+Route::resource('areaUnidads', 'AreaUnidadController');
+
+Route::resource('areaSpecs', 'Area_SpecController');

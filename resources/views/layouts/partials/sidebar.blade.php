@@ -57,7 +57,13 @@
                         <a href="{!! route('documentosUnidads.index') !!}"><i class="fa fa-edit"></i><span>..Unidad-Documentos</span></a>
                     </li>
                     <li class="{{ Request::is('areas*') ? 'active' : '' }}">
-                        <a href="{!! route('areas.index') !!}"><i class="fa fa-edit"></i><span>..Areas</span></a>
+                        <a href="{!! route('areas.index') !!}"><i class="fa fa-edit"></i><span>Areas</span></a>
+                    </li>
+                    <li class="{{ Request::is('areaUnidads*') ? 'active' : '' }}">
+                        <a href="{!! route('areaUnidads.index') !!}"><i class="fa fa-edit"></i><span>..Area x Unidades</span></a>
+                    </li>
+                    <li class="{{ Request::is('areaSpecs*') ? 'active' : '' }}">
+                        <a href="{!! route('areaSpecs.index') !!}"><i class="fa fa-edit"></i><span>..Area Especificaciones</span></a>
                     </li>
                 </ul>
             </li>
