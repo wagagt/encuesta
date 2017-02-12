@@ -95,6 +95,9 @@
                     <li class="{{ Request::is('tipoPasos*') ? 'active' : '' }}">
                         <a href="{!! route('tipoPasos.index') !!}"><i class="fa fa-edit"></i><span>.....Tipo Pasos</span></a>
                     </li>
+                    <li class="{{ Request::is('lugarPagos*') ? 'active' : '' }}">
+                        <a href="{!! route('lugarPagos.index') !!}"><i class="fa fa-edit"></i><span>Lugares Pagos</span></a>
+                    </li>
 
                 </ul>
             </li>

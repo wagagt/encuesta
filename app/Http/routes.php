@@ -72,3 +72,5 @@ Route::resource('tipoPasos', 'TipoPasoController');
 Route::resource('pasos', 'PasoController');
 
 Route::resource('procedimientos', 'ProcedimientoController');
+
+Route::resource('lugarPagos', 'LugarPagoController');
