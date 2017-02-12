@@ -78,3 +78,7 @@
     <a href="{!! route('lugarPagos.index') !!}"><i class="fa fa-edit"></i><span>LugarPagos</span></a>
 </li>
 
+<li class="{{ Request::is('metodoPagos*') ? 'active' : '' }}">
+    <a href="{!! route('metodoPagos.index') !!}"><i class="fa fa-edit"></i><span>MetodoPagos</span></a>
+</li>
+

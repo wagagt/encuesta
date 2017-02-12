@@ -98,6 +98,9 @@
                     <li class="{{ Request::is('lugarPagos*') ? 'active' : '' }}">
                         <a href="{!! route('lugarPagos.index') !!}"><i class="fa fa-edit"></i><span>Lugares Pagos</span></a>
                     </li>
+                    <li class="{{ Request::is('metodoPagos*') ? 'active' : '' }}">
+                        <a href="{!! route('metodoPagos.index') !!}"><i class="fa fa-edit"></i><span>MetodoPagos</span></a>
+                    </li>
 
                 </ul>
             </li>
