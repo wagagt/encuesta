@@ -56,3 +56,9 @@ Route::resource('areaSpecs', 'Area_SpecController');
 Route::resource('puestos', 'PuestoController');
 
 Route::resource('requisitosPuestos', 'RequisitosPuestoController');
+
+Route::resource('clasificacions', 'ClasificacionController');
+
+Route::resource('baseLegals', 'BaseLegalController');
+
+Route::resource('servicios', 'ServicioController');

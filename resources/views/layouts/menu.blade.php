@@ -42,3 +42,15 @@
     <a href="{!! route('requisitosPuestos.index') !!}"><i class="fa fa-edit"></i><span>RequisitosPuestos</span></a>
 </li>
 
+<li class="{{ Request::is('clasificacions*') ? 'active' : '' }}">
+    <a href="{!! route('clasificacions.index') !!}"><i class="fa fa-edit"></i><span>Clasificacions</span></a>
+</li>
+
+<li class="{{ Request::is('baseLegals*') ? 'active' : '' }}">
+    <a href="{!! route('baseLegals.index') !!}"><i class="fa fa-edit"></i><span>BaseLegals</span></a>
+</li>
+
+<li class="{{ Request::is('servicios*') ? 'active' : '' }}">
+    <a href="{!! route('servicios.index') !!}"><i class="fa fa-edit"></i><span>Servicios</span></a>
+</li>
+

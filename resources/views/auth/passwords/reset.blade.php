@@ -4,7 +4,7 @@
     Password reset
 @endsection
 
-@section('content')
+@section('main-content')
 
     <body class="login-page">
     <div class="login-box">

@@ -4,7 +4,7 @@
     Register
 @endsection
 
-@section('content')
+@section('main-content')
 
     <body class="hold-transition register-page">
     <div class="register-box">

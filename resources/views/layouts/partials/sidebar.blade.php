@@ -42,34 +42,43 @@
                         <a href="{!! route('institucions.index') !!}"><i class="fa fa-edit"></i><span>Instituciones</span></a>
                     </li>
                     <li class="{{ Request::is('documentosInstitucions*') ? 'active' : '' }}">
-                        <a href="{!! route('documentosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>..Inst-Documentos</span></a>
+                        <a href="{!! route('documentosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>.....Inst-Documentos</span></a>
                     </li>
                     <li class="{{ Request::is('contactosInstitucions*') ? 'active' : '' }}">
-                        <a href="{!! route('contactosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>..Inst-Contactos</span></a>
+                        <a href="{!! route('contactosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>.....Inst-Contactos</span></a>
                     </li>
                     <li class="{{ Request::is('horariosInstitucions*') ? 'active' : '' }}">
-                        <a href="{!! route('horariosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>..Inst-Horarios</span></a>
+                        <a href="{!! route('horariosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>.....Inst-Horarios</span></a>
                     </li>
                     <li class="{{ Request::is('unidads*') ? 'active' : '' }}">
                         <a href="{!! route('unidads.index') !!}"><i class="fa fa-edit"></i><span>Unidades</span></a>
                     </li>
                     <li class="{{ Request::is('documentosUnidads*') ? 'active' : '' }}">
-                        <a href="{!! route('documentosUnidads.index') !!}"><i class="fa fa-edit"></i><span>..Unidad-Documentos</span></a>
+                        <a href="{!! route('documentosUnidads.index') !!}"><i class="fa fa-edit"></i><span>.....Unidad-Documentos</span></a>
                     </li>
                     <li class="{{ Request::is('areas*') ? 'active' : '' }}">
                         <a href="{!! route('areas.index') !!}"><i class="fa fa-edit"></i><span>Areas</span></a>
                     </li>
                     <li class="{{ Request::is('areaUnidads*') ? 'active' : '' }}">
-                        <a href="{!! route('areaUnidads.index') !!}"><i class="fa fa-edit"></i><span>..Area x Unidades</span></a>
+                        <a href="{!! route('areaUnidads.index') !!}"><i class="fa fa-edit"></i><span>.....Area x Unidades</span></a>
                     </li>
                     <li class="{{ Request::is('areaSpecs*') ? 'active' : '' }}">
-                        <a href="{!! route('areaSpecs.index') !!}"><i class="fa fa-edit"></i><span>..Area Especificaciones</span></a>
+                        <a href="{!! route('areaSpecs.index') !!}"><i class="fa fa-edit"></i><span>.....Area Especificaciones</span></a>
                     </li>
                     <li class="{{ Request::is('puestos*') ? 'active' : '' }}">
                         <a href="{!! route('puestos.index') !!}"><i class="fa fa-edit"></i><span>Puestos</span></a>
                     </li>
                     <li class="{{ Request::is('requisitosPuestos*') ? 'active' : '' }}">
-                        <a href="{!! route('requisitosPuestos.index') !!}"><i class="fa fa-edit"></i><span>.. Puestos-Requisitos</span></a>
+                        <a href="{!! route('requisitosPuestos.index') !!}"><i class="fa fa-edit"></i><span>.....Puestos-Requisitos</span></a>
+                    </li>
+                    <li class="{{ Request::is('servicios*') ? 'active' : '' }}">
+                        <a href="{!! route('servicios.index') !!}"><i class="fa fa-edit"></i><span>Servicios</span></a>
+                    </li>
+                    <li class="{{ Request::is('clasificacions*') ? 'active' : '' }}">
+                        <a href="{!! route('clasificacions.index') !!}"><i class="fa fa-edit"></i><span>.....Serv-Clasificacion</span></a>
+                    </li>
+                    <li class="{{ Request::is('baseLegals*') ? 'active' : '' }}">
+                        <a href="{!! route('baseLegals.index') !!}"><i class="fa fa-edit"></i><span>.....Serv-BaseLegal</span></a>
                     </li>
                 </ul>
             </li>
