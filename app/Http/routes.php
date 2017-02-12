@@ -31,3 +31,6 @@ Route::group(['prefix' => 'api', 'namespace' => 'API'], function () {
         require config('infyom.laravel_generator.path.api_routes');
     });
 });
+
+
+Route::resource('institucions', 'InstitucionController');
