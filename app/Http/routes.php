@@ -40,3 +40,5 @@ Route::resource('documentosInstitucions', 'DocumentosInstitucionController');
 Route::resource('contactosInstitucions', 'ContactosInstitucionController');
 
 Route::resource('horariosInstitucions', 'HorariosInstitucionController');
+
+Route::resource('unidads', 'UnidadController');

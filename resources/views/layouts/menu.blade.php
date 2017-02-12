@@ -14,3 +14,7 @@
     <a href="{!! route('horariosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>HorariosInstitucions</span></a>
 </li>
 
+<li class="{{ Request::is('unidads*') ? 'active' : '' }}">
+    <a href="{!! route('unidads.index') !!}"><i class="fa fa-edit"></i><span>Unidads</span></a>
+</li>
+
