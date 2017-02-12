@@ -53,6 +53,9 @@
                     <li class="{{ Request::is('unidads*') ? 'active' : '' }}">
                         <a href="{!! route('unidads.index') !!}"><i class="fa fa-edit"></i><span>Unidades</span></a>
                     </li>
+                    <li class="{{ Request::is('documentosUnidads*') ? 'active' : '' }}">
+                        <a href="{!! route('documentosUnidads.index') !!}"><i class="fa fa-edit"></i><span>Unidad-Documentos</span></a>
+                    </li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->

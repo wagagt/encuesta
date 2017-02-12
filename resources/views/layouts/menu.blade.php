@@ -18,3 +18,7 @@
     <a href="{!! route('unidads.index') !!}"><i class="fa fa-edit"></i><span>Unidads</span></a>
 </li>
 
+<li class="{{ Request::is('documentosUnidads*') ? 'active' : '' }}">
+    <a href="{!! route('documentosUnidads.index') !!}"><i class="fa fa-edit"></i><span>DocumentosUnidads</span></a>
+</li>
+
