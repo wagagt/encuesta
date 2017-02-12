@@ -58,3 +58,7 @@
     <a href="{!! route('tipoPresencias.index') !!}"><i class="fa fa-edit"></i><span>TipoPresencias</span></a>
 </li>
 
+<li class="{{ Request::is('baseLegalCostos*') ? 'active' : '' }}">
+    <a href="{!! route('baseLegalCostos.index') !!}"><i class="fa fa-edit"></i><span>BaseLegalCostos</span></a>
+</li>
+

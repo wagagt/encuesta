@@ -64,3 +64,5 @@ Route::resource('baseLegals', 'BaseLegalController');
 Route::resource('servicios', 'ServicioController');
 
 Route::resource('tipoPresencias', 'TipoPresenciaController');
+
+Route::resource('baseLegalCostos', 'BaseLegalCostoController');
