@@ -10,7 +10,8 @@
         "infyomlabs/laravel-generator": "5.2.x-dev",
         "laravelcollective/html": "5.2.*",
         "infyomlabs/adminlte-templates": "5.2.x-dev",
-        "doctrine/dbal": "~2.3"
+        "doctrine/dbal": "~2.3",
+        "acacha/admin-lte-template-laravel": "2.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
