@@ -10,3 +10,7 @@
     <a href="{!! route('contactosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>ContactosInstitucions</span></a>
 </li>
 
+<li class="{{ Request::is('horariosInstitucions*') ? 'active' : '' }}">
+    <a href="{!! route('horariosInstitucions.index') !!}"><i class="fa fa-edit"></i><span>HorariosInstitucions</span></a>
+</li>
+

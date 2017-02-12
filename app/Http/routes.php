@@ -38,3 +38,5 @@ Route::resource('institucions', 'InstitucionController');
 Route::resource('documentosInstitucions', 'DocumentosInstitucionController');
 
 Route::resource('contactosInstitucions', 'ContactosInstitucionController');
+
+Route::resource('horariosInstitucions', 'HorariosInstitucionController');
