@@ -62,3 +62,5 @@ Route::resource('clasificacions', 'ClasificacionController');
 Route::resource('baseLegals', 'BaseLegalController');
 
 Route::resource('servicios', 'ServicioController');
+
+Route::resource('tipoPresencias', 'TipoPresenciaController');

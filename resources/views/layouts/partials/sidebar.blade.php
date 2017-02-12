@@ -80,6 +80,9 @@
                     <li class="{{ Request::is('baseLegals*') ? 'active' : '' }}">
                         <a href="{!! route('baseLegals.index') !!}"><i class="fa fa-edit"></i><span>.....Serv-BaseLegal</span></a>
                     </li>
+                    <li class="{{ Request::is('tipoPresencias*') ? 'active' : '' }}">
+                        <a href="{!! route('tipoPresencias.index') !!}"><i class="fa fa-edit"></i><span>TipoPresencias</span></a>
+                    </li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->

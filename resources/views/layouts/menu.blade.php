@@ -54,3 +54,7 @@
     <a href="{!! route('servicios.index') !!}"><i class="fa fa-edit"></i><span>Servicios</span></a>
 </li>
 
+<li class="{{ Request::is('tipoPresencias*') ? 'active' : '' }}">
+    <a href="{!! route('tipoPresencias.index') !!}"><i class="fa fa-edit"></i><span>TipoPresencias</span></a>
+</li>
+
