@@ -13,11 +13,12 @@ class CreateDocumentosInstitucionesTable extends Migration
     public function up()
     {
         Schema::create('documentos_instituciones', function (Blueprint $table) {
-            $table->integer('id');
+            $table->increments('id');
             $table->integer('institucione_id')->unsigned();
             $table->enum('tipo_documento', ['foto','organigrama', 'info'])->nullable();
             $table->string('ubicacion', 300)->nullable();
             $table->mediumText('notas')->nullable();
+            $table->timestamps();
 
             $table->foreign('institucione_id')->references('id')->on('instituciones')->onDelete('no action')->onUpdate('no action');
         });

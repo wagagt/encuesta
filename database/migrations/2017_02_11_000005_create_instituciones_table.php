@@ -20,6 +20,7 @@ class CreateInstitucionesTable extends Migration
             $table->string('telefonos', 50)->nullable();
             $table->mediumText('pregunta_final')->nullable();
             $table->integer('estado_avance')->nullable();
+            $table->timestamps();
         });
     }
 

@@ -13,7 +13,7 @@ class CreateHorariosInstitucionesTable extends Migration
     public function up()
     {
         Schema::create('horarios_instituciones', function (Blueprint $table) {
-            $table->integer('id');
+            $table->increments('id');
             $table->integer('institucione_id')->unsigned();
             $table->string('dia', 45)->nullable();
             $table->string('entrada', 45)->nullable();
@@ -21,6 +21,7 @@ class CreateHorariosInstitucionesTable extends Migration
             $table->string('medio_dia_cierra', 45)->nullable();
             $table->string('medio_dia_abre', 45)->nullable();
             $table->mediumText('notas')->nullable();
+            $table->timestamps();
 
             $table->foreign('institucione_id')->references('id')->on('instituciones')->onDelete('no action')->onUpdate('no action');
         });

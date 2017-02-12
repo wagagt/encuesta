@@ -5,11 +5,6 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateContactosInstitucionesTable extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
     public function up()
     {
         Schema::create('contactos_instituciones', function (Blueprint $table) {
@@ -20,16 +15,13 @@ class CreateContactosInstitucionesTable extends Migration
             $table->string('email', 45)->nullable();
             $table->string('telefono_directo', 45)->nullable();
             $table->string('foto_ubicacion', 300)->nullable();
+            $table->timestamps();
 
             $table->foreign('institucione_id')->references('id')->on('instituciones')->onDelete('no action')->onUpdate('no action');
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
+
     public function down()
     {
         Schema::table('contactos_instituciones', function (Blueprint $table) {
