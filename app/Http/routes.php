@@ -52,3 +52,5 @@ Route::resource('areas', 'AreaController');
 Route::resource('areaUnidads', 'AreaUnidadController');
 
 Route::resource('areaSpecs', 'Area_SpecController');
+
+Route::resource('puestos', 'PuestoController');

@@ -65,6 +65,9 @@
                     <li class="{{ Request::is('areaSpecs*') ? 'active' : '' }}">
                         <a href="{!! route('areaSpecs.index') !!}"><i class="fa fa-edit"></i><span>..Area Especificaciones</span></a>
                     </li>
+                    <li class="{{ Request::is('puestos*') ? 'active' : '' }}">
+                        <a href="{!! route('puestos.index') !!}"><i class="fa fa-edit"></i><span>Puestos</span></a>
+                    </li>
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->
