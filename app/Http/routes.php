@@ -80,3 +80,5 @@ Route::resource('metodoPagos', 'MetodoPagoController');
 Route::resource('ejecutors', 'EjecutorController');
 
 Route::resource('tipoRequisitos', 'TipoRequisitoController');
+
+Route::resource('formaPresentacions', 'FormaPresentacionController');

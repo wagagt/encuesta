@@ -90,3 +90,7 @@
     <a href="{!! route('tipoRequisitos.index') !!}"><i class="fa fa-edit"></i><span>TipoRequisitos</span></a>
 </li>
 
+<li class="{{ Request::is('formaPresentacions*') ? 'active' : '' }}">
+    <a href="{!! route('formaPresentacions.index') !!}"><i class="fa fa-edit"></i><span>FormaPresentacions</span></a>
+</li>
+
