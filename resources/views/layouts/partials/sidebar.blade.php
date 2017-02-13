@@ -96,13 +96,16 @@
                         <a href="{!! route('tipoPasos.index') !!}"><i class="fa fa-edit"></i><span>.....Tipo Pasos</span></a>
                     </li>
                     <li class="{{ Request::is('lugarPagos*') ? 'active' : '' }}">
-                        <a href="{!! route('lugarPagos.index') !!}"><i class="fa fa-edit"></i><span>Lugares Pagos</span></a>
+                        <a href="{!! route('lugarPagos.index') !!}"><i class="fa fa-edit"></i><span>.....Lugares Pagos</span></a>
                     </li>
                     <li class="{{ Request::is('metodoPagos*') ? 'active' : '' }}">
-                        <a href="{!! route('metodoPagos.index') !!}"><i class="fa fa-edit"></i><span>MetodoPagos</span></a>
+                        <a href="{!! route('metodoPagos.index') !!}"><i class="fa fa-edit"></i><span>.....MetodoPagos</span></a>
                     </li>
                     <li class="{{ Request::is('metodoPagos*') ? 'active' : '' }}">
                         <a href="{!! route('ejecutors.index') !!}"><i class="fa fa-edit"></i><span>Ejecutores</span></a>
+                    </li>
+                    <li class="{{ Request::is('tipoRequisitos*') ? 'active' : '' }}">
+                        <a href="{!! route('tipoRequisitos.index') !!}"><i class="fa fa-edit"></i><span>.....Tipo Requisitos</span></a>
                     </li>
 
                 </ul>

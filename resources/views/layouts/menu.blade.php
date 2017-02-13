@@ -86,3 +86,7 @@
     <a href="{!! route('ejecutors.index') !!}"><i class="fa fa-edit"></i><span>Ejecutors</span></a>
 </li>
 
+<li class="{{ Request::is('tipoRequisitos*') ? 'active' : '' }}">
+    <a href="{!! route('tipoRequisitos.index') !!}"><i class="fa fa-edit"></i><span>TipoRequisitos</span></a>
+</li>
+
