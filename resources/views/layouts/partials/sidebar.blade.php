@@ -104,13 +104,15 @@
                     <li class="{{ Request::is('metodoPagos*') ? 'active' : '' }}">
                         <a href="{!! route('ejecutors.index') !!}"><i class="fa fa-edit"></i><span>.....Ejecutores</span></a>
                     </li>
+                    <li class="{{ Request::is('requisitos*') ? 'active' : '' }}">
+                        <a href="{!! route('requisitos.index') !!}"><i class="fa fa-edit"></i><span>Requisitos</span></a>
+                    </li>
                     <li class="{{ Request::is('tipoRequisitos*') ? 'active' : '' }}">
                         <a href="{!! route('tipoRequisitos.index') !!}"><i class="fa fa-edit"></i><span>.....Tipo Requisitos</span></a>
                     </li>
                     <li class="{{ Request::is('formaPresentacions*') ? 'active' : '' }}">
                         <a href="{!! route('formaPresentacions.index') !!}"><i class="fa fa-edit"></i><span>.....Formas de Presentacion</span></a>
                     </li>
-
                 </ul>
             </li>
         </ul><!-- /.sidebar-menu -->
