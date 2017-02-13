@@ -98,3 +98,7 @@
     <a href="{!! route('requisitos.index') !!}"><i class="fa fa-edit"></i><span>Requisitos</span></a>
 </li>
 
+<li class="{{ Request::is('tipoResultados*') ? 'active' : '' }}">
+    <a href="{!! route('tipoResultados.index') !!}"><i class="fa fa-edit"></i><span>TipoResultados</span></a>
+</li>
+
