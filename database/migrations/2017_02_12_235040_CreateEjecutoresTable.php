@@ -19,7 +19,7 @@ class CreateEjecutoresTable extends Migration
             $table->string('puesto', 100)->nullable();
             $table->string('recibe_del_paso', 100)->nullable();
             $table->string('entrega_al_paso', 100)->nullable();
-            $table->timestamps();
+            $table->timestamp();
 
             $table->foreign('paso_id')->references('id')->on('pasos')->onDelete('no action')->onUpdate('no action');
         });

@@ -82,3 +82,7 @@
     <a href="{!! route('metodoPagos.index') !!}"><i class="fa fa-edit"></i><span>MetodoPagos</span></a>
 </li>
 
+<li class="{{ Request::is('ejecutors*') ? 'active' : '' }}">
+    <a href="{!! route('ejecutors.index') !!}"><i class="fa fa-edit"></i><span>Ejecutors</span></a>
+</li>
+

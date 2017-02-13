@@ -76,3 +76,5 @@ Route::resource('procedimientos', 'ProcedimientoController');
 Route::resource('lugarPagos', 'LugarPagoController');
 
 Route::resource('metodoPagos', 'MetodoPagoController');
+
+Route::resource('ejecutors', 'EjecutorController');
