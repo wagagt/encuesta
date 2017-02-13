@@ -106,3 +106,15 @@
     <a href="{!! route('resultados.index') !!}"><i class="fa fa-edit"></i><span>Resultados</span></a>
 </li>
 
+<li class="{{ Request::is('fotoResultados*') ? 'active' : '' }}">
+    <a href="{!! route('fotoResultados.index') !!}"><i class="fa fa-edit"></i><span>FotoResultados</span></a>
+</li>
+
+<li class="{{ Request::is('tipoResultados*') ? 'active' : '' }}">
+    <a href="{!! route('tipoResultados.index') !!}"><i class="fa fa-edit"></i><span>TipoResultados</span></a>
+</li>
+
+<li class="{{ Request::is('imagenResultados*') ? 'active' : '' }}">
+    <a href="{!! route('imagenResultados.index') !!}"><i class="fa fa-edit"></i><span>ImagenResultados</span></a>
+</li>
+

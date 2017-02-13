@@ -5,14 +5,14 @@ namespace App\Models;
 use Eloquent as Model;
 
 /**
- * Class TipoResultado
+ * Class FotoResultado
  * @package App\Models
- * @version February 13, 2017, 3:24 am UTC
+ * @version February 13, 2017, 3:23 am UTC
  */
-class TipoResultado extends Model
+class FotoResultado extends Model
 {
 
-    public $table = 'tipo_resultados';
+    public $table = 'fotos_resultados';
     
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
@@ -20,7 +20,8 @@ class TipoResultado extends Model
 
 
     public $fillable = [
-        'tipo',
+        'resultado_id',
+        'descripcion',
         'especifique'
     ];
 
@@ -31,7 +32,8 @@ class TipoResultado extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'tipo' => 'string',
+        'resultado_id' => 'integer',
+        'descripcion' => 'string',
         'especifique' => 'string'
     ];
 
@@ -45,10 +47,10 @@ class TipoResultado extends Model
     ];
 
     /**
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      **/
-    public function resultados()
+    public function resultado()
     {
-        return $this->hasMany(\App\Models\Resultado::class);
+        return $this->belongsTo(\App\Models\Resultado::class);
     }
 }

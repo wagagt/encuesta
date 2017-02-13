@@ -88,3 +88,9 @@ Route::resource('requisitos', 'RequisitoController');
 Route::resource('tipoResultados', 'TipoResultadoController');
 
 Route::resource('resultados', 'ResultadoController');
+
+Route::resource('fotoResultados', 'FotoResultadoController');
+
+Route::resource('tipoResultados', 'TipoResultadoController');
+
+Route::resource('imagenResultados', 'ImagenResultadoController');
