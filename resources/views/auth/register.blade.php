@@ -1,7 +1,7 @@
 @extends('layouts.auth')
 
 @section('htmlheader_title')
-    Register
+    Registro
 @endsection
 
 @section('main-content')
@@ -9,7 +9,7 @@
     <body class="hold-transition register-page">
     <div class="register-box">
         <div class="register-logo">
-            <a href="{{ url('/home') }}"><b>Admin</b>LTE</a>
+            <a href="{{ url('/home') }}"><b>FICHA</b>Electrónica</a>
         </div>
 
         @if (count($errors) > 0)
