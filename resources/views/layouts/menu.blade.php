@@ -102,3 +102,7 @@
     <a href="{!! route('tipoResultados.index') !!}"><i class="fa fa-edit"></i><span>TipoResultados</span></a>
 </li>
 
+<li class="{{ Request::is('resultados*') ? 'active' : '' }}">
+    <a href="{!! route('resultados.index') !!}"><i class="fa fa-edit"></i><span>Resultados</span></a>
+</li>
+

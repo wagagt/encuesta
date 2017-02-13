@@ -86,3 +86,5 @@ Route::resource('formaPresentacions', 'FormaPresentacionController');
 Route::resource('requisitos', 'RequisitoController');
 
 Route::resource('tipoResultados', 'TipoResultadoController');
+
+Route::resource('resultados', 'ResultadoController');

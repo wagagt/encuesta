@@ -113,7 +113,9 @@
                     <li class="{{ Request::is('formaPresentacions*') ? 'active' : '' }}">
                         <a href="{!! route('formaPresentacions.index') !!}"><i class="fa fa-edit"></i><span>.....Formas de Presentacion</span></a>
                     </li>
-                    
+                    <li class="{{ Request::is('resultados*') ? 'active' : '' }}">
+                        <a href="{!! route('resultados.index') !!}"><i class="fa fa-edit"></i><span>Resultados</span></a>
+                    </li>
                     <li class="{{ Request::is('tipoResultados*') ? 'active' : '' }}">
                         <a href="{!! route('tipoResultados.index') !!}"><i class="fa fa-edit"></i><span>.....Tipo de Resultados</span></a>
                     </li>
