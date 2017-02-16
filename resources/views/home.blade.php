@@ -2,8 +2,6 @@
 @section('title', 'Main')
 @section('content')
 
-@section('content')
-
 <div class="">
 
         <div class="page-title">
@@ -116,7 +114,6 @@
     <script>
 
     </script>
-
 
 @endsection
 
