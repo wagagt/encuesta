@@ -15,11 +15,14 @@ Route::get('/', function () {
 		return view('welcome');
 	});
 
-Route::auth();
 
-
+Route::get('login', 'Auth\AuthController@getLogin');
+Route::post('login', 'Auth\AuthController@postLogin');
+Route::get('logout', 'Auth\AuthController@getLogout');
+//Route::auth();
 Route::get('/', 'HomeController@index');
 
+Route::resource('file', 'FileController');
 /*
 |--------------------------------------------------------------------------
 | API routes

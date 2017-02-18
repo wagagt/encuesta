@@ -49,8 +49,6 @@
                                     <div class="col-md-6">
 
                                        <h2>Datos de la institución</h2>
-
-
                                         @include('form-fields.institucion-tab1.institucion-tab1-col1')
 
                                     </div>
@@ -68,15 +66,10 @@
                                 <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
                                     {!! Form::open() !!}
                                     <div class="col-md-6">
-
                                         <h2>Datos Generales de la Unidad</h2>
-
-
                                         @include('form-fields.institucion-tab2.institucion-tab2-col1')
-
                                     </div>
                                     <div class="col-md-6">
-
                                         @include('form-fields.institucion-tab2.institucion-tab2-col2')
                                     </div>
                                     <div class="col-md-12 text-right">
@@ -87,16 +80,43 @@
                                     <div class="col-md-12 text-right">
                                         @include('form-fields.institucion-tab2.institucion-tab2-table')
                                     </div>
-
                                 </div>
 
                                 <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-                                    <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
-                                        booth letterpress, commodo enim craft beer mlkshk </p>
+                                    {!! Form::open() !!}
+                                    <div class="col-md-6">
+                                        <h2>Contactos / Encargados:</h2>
+                                        @include('form-fields.institucion-tab3.institucion-tab3-col1')
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2>Subir fotografía:</h2>
+                                        @include('form-fields.institucion-tab3.institucion-tab3-col2')
+                                    </div>
+                                    <div class="col-md-12 text-right">
+                                        {!! Form::submit('Enviar', ['class' => 'btn btn-success']) !!}
+                                    </div>
+                                    {!! Form::close() !!}
                                 </div>
+                                
                                 <div role="tabpanel" class="tab-pane fade" id="tab_content4" aria-labelledby="profile-tab">
-                                    <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
-                                        booth letterpress, commodo enim craft beer mlkshk </p>
+                                    {!! Form::open(['route'=> 'file.store', 'method' => 'POST', 'files'=>'true','id' => 'myDropzone' , 'class' => 'dropzone', 'enctype' => 'multipart/form-data']) !!}
+                                    <div class="col-md-6">
+                                        <h2>Datos del Documento:</h2>
+                                        @include('form-fields.institucion-tab4.institucion-tab4-col1')
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2>Notas:</h2>
+                                        @include('form-fields.institucion-tab4.institucion-tab4-col2')
+                                    </div>
+                                    <div class="col-md-12 text-right">
+                                        
+                                        <button type="submit" class="btn btn-success" id="submit"><i class="fa fa-cloud-upload" ></i> Subir</button>
+                                    </div>
+                                    {!! Form::close() !!}
+                                    <h2>Documentos de la institución</h2>
+                                    <div class="col-md-12 text-right">
+                                        @include('form-fields.institucion-tab4.institucion-tab4-table')
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +132,47 @@
 
 @section('js')
     <script>
+Dropzone.options.myDropzone = {
+            uploadMultiple: true,
+            maxFilezise: 5120,
+            maxFiles: 1,
+            autoProcessQueue: false,
+            parallelUploads: 5,
+            previewsContainer: '#dropzonePreview',
+            addRemoveLinks: true,
+            dictRemoveFile: 'Remover selección',
+            acceptedFiles: '.jpg, .jpeg, .png, .gif, .bmp, .docx, .doc, .xlsx, .xls, .pptx, .ppt, .pdf, .txt',
+            thumbnailWidth:       150,
+            thumbnailHeight:      150,
 
+
+
+            init: function() {
+                var submitBtn = document.querySelector("#submit");
+                myDropzone = this;
+
+                submitBtn.addEventListener('click', function(e){
+                    e.preventDefault();
+                    e.stopPropagation();
+                    myDropzone.processQueue();
+                });
+                this.on('addfile', function(file) {
+                    //alert("Archivo subido");
+                });destino
+
+                this.on('complete', function(file) {
+                    myDropzone.removeFile(file);
+                });
+
+                this.on('success', function(){
+                    myDropzone.processQueue.bind(myDropzone);
+                    if (this.getQueuedFiles().length == 0 && this.getUploadingFiles().length == 0) {
+                        location.reload();
+                    }
+
+                });
+            }
+        };
     </script>
 
 @endsection

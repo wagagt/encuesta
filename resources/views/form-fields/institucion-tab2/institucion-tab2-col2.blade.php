@@ -9,6 +9,9 @@
 
 <div class="form-group col-md-12">
     <div class="form-group col-xs-12 col-sm-12 col-sm-12">
+        <div class="pull-right">
+            <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
+        </div>
         <table class="table table-responsive table-bordered" id="empresas-table">
             <thead>
             <th>DOCUMENTO</th>

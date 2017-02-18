@@ -36,5 +36,5 @@
 
 <!-- Custom Theme Scripts -->
 <script src="{{ asset('ui/uix/build/js/custom.min.js') }}"></script>
-
+<script type="text/javascript" src="{{asset('plugins/dropzone/dropzone.js')}}"></script>
 @yield('js')

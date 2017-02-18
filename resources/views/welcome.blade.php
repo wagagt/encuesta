@@ -1,2 +1,2 @@
-@extends('layouts.landing')
+@extends('theme.layouts.landing')
 

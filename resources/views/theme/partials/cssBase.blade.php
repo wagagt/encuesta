@@ -15,3 +15,5 @@
 
 <!-- Custom Theme Style -->
 <link href="{{ asset('ui/uix/build/css/custom.min.css') }}" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ asset('plugins/dropzone/dropzone.css') }}">
