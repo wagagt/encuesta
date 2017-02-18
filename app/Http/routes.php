@@ -13,14 +13,17 @@
 
 Route::get('/', function () {
 		return view('welcome');
-	});
+});
 
+Route::get('logout', ['uses' => 'Auth\AuthController@getLogout', 'as' => 'logout']);
 
-Route::get('login', 'Auth\AuthController@getLogin');
-Route::post('login', 'Auth\AuthController@postLogin');
-Route::get('logout', 'Auth\AuthController@getLogout');
+//Route::post('login', 'Auth\AuthController@postLogin');
+//Route::get('logout', 'Auth\AuthController@getLogout');
 //Route::auth();
 Route::get('/', 'HomeController@index');
+Route::get('login', 'Auth\AuthController@getLogin');
+Route::post('login', ['uses' => 'Auth\AuthController@postLogin', 'as' => 'login']);
+
 
 Route::resource('file', 'FileController');
 /*
