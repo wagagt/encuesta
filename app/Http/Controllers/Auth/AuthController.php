@@ -7,6 +7,8 @@ use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Contracts\Auth\Guard;
+use Session;
 
 class AuthController extends Controller
 {
@@ -35,9 +37,17 @@ class AuthController extends Controller
      *
      * @return void
      */
-    public function __construct()
+    /*public function __construct(Guard $auth)
     {
+        $this->auth = $auth;
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
+    }*/
+
+    public function __construct(Guard $auth)
+    {
+        $this->auth = $auth;
+        $this->middleware('guest', ['except' => 'getLogout']);
+
     }
 
     /**
@@ -69,5 +79,13 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    public function getLogout()
+    {
+        //dd('yop');
+        $this->auth->logout();
+        Session::flush();
+        return redirect('login');
     }
 }

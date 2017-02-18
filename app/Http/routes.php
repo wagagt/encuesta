@@ -14,11 +14,14 @@
 Route::get('/', function () {
 		return view('welcome');
 	});
-
-Route::auth();
+Route::get('logout', ['uses' => 'Auth\AuthController@getLogout', 'as' => 'logout']);
+//Route::auth();
 
 
 Route::get('/', 'HomeController@index');
+Route::get('login', 'Auth\AuthController@getLogin');
+Route::post('login', ['uses' => 'Auth\AuthController@postLogin', 'as' => 'login']);
+
 
 /*
 |--------------------------------------------------------------------------
