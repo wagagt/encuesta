@@ -132,6 +132,10 @@
 
 @section('js')
     <script>
+$(document).ready(function() {
+  $(".area_id").select2();
+});
+
 Dropzone.options.myDropzone = {
             uploadMultiple: true,
             maxFilezise: 5120,

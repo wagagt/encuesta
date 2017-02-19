@@ -136,7 +136,7 @@
                                     </div>
                                     <div class="col-md-12 text-right">
                                         
-                                        <button type="submit" class="btn btn-success" id="submit"><i class="fa fa-cloud-upload" ></i> Subir</button>
+                                        <button type="submit" class="btn btn-success" id="submit"><i class="fa fa-cloud-upload" ></i> Grabar</button>
                                     </div>
                                     {!! Form::close() !!}
                                 </div>
@@ -148,48 +148,57 @@
                                         @include('form-fields.unidad-tab6.unidad-tab6-col1')
                                     </div>
                                     <div class="col-md-6">
-                                        <h2>Notas:</h2>
+                                        <h2></h2>
                                         @include('form-fields.unidad-tab6.unidad-tab6-col2')
                                     </div>
-                                    <div class="col-md-12 text-right">
-                                        
-                                        <button type="submit" class="btn btn-success" id="submit"><i class="fa fa-cloud-upload" ></i> Subir</button>
+                                     <div class="col-md-12 text-right">
+                                        {!! Form::submit('Enviar', ['class' => 'btn btn-success']) !!}
                                     </div>
                                     {!! Form::close() !!}
+                                    <h2>Areas de la unidad:</h2>
+                                    <div class="col-md-12 text-right">
+                                        @include('form-fields.unidad-tab6.unidad-tab6-table')
+                                    </div>
                                 </div>
                                 
-                                <div role="tabpanel" class="tab-pane fade" id="tab_content7" aria-labelledby="profile-tab">
+                             <div role="tabpanel" class="tab-pane fade" id="tab_content7" aria-labelledby="profile-tab">
                                     {!! Form::open() !!}
                                     <div class="col-md-6">
-                                        <h2>Datos del Documento:</h2>
+                                        <h2>Datos del Puesto:</h2>
                                         @include('form-fields.unidad-tab7.unidad-tab7-col1')
                                     </div>
                                     <div class="col-md-6">
-                                        <h2>Notas:</h2>
+                                        <h2>Objetivo principal del puesto:</h2>
                                         @include('form-fields.unidad-tab7.unidad-tab7-col2')
                                     </div>
-                                    <div class="col-md-12 text-right">
-                                        
-                                        <button type="submit" class="btn btn-success" id="submit"><i class="fa fa-cloud-upload" ></i> Subir</button>
+                                     <div class="col-md-12 text-right">
+                                        {!! Form::submit('Grabar', ['class' => 'btn btn-success']) !!}
                                     </div>
                                     {!! Form::close() !!}
+                                    <h2>Areas de la unidad:</h2>
+                                    <div class="col-md-12 text-right">
+                                        @include('form-fields.unidad-tab7.unidad-tab7-table')
+                                    </div>
                                 </div>
                                 
-                                 <div role="tabpanel" class="tab-pane fade" id="tab_content8" aria-labelledby="profile-tab">
+                                <div role="tabpanel" class="tab-pane fade" id="tab_content8" aria-labelledby="profile-tab">
                                     {!! Form::open() !!}
                                     <div class="col-md-6">
-                                        <h2>Datos del Documento:</h2>
+                                        <h2>Datos del Servicio:</h2>
                                         @include('form-fields.unidad-tab8.unidad-tab8-col1')
                                     </div>
                                     <div class="col-md-6">
-                                        <h2>Notas:</h2>
+                                        <h2></h2>
                                         @include('form-fields.unidad-tab8.unidad-tab8-col2')
                                     </div>
-                                    <div class="col-md-12 text-right">
-                                        
-                                        <button type="submit" class="btn btn-success" id="submit"><i class="fa fa-cloud-upload" ></i> Subir</button>
+                                     <div class="col-md-12 text-right">
+                                        {!! Form::submit('Grabar', ['class' => 'btn btn-success']) !!}
                                     </div>
                                     {!! Form::close() !!}
+                                    <h2>Servicios de la unidad:</h2>
+                                    <div class="col-md-12 text-right">
+                                        @include('form-fields.unidad-tab8.unidad-tab8-table')
+                                    </div>
                                 </div>
                                 
                             </div>
@@ -207,7 +216,7 @@
 @section('js')
     <script>
         
-        $(document).ready(function() {
+$(document).ready(function() {
   $(".institucion_id").select2();
 });
         
