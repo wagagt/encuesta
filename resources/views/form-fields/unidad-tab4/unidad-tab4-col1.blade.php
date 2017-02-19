@@ -5,14 +5,12 @@
     </div>
     <div class="panel-body">
         
-        cabmio-cache
-        
         <div class="dz-message" style="height:5px;"></div>
         <div class="fallback">
             <input type="file" name="file" id="file" multiple/>
         </div>
         <div class="dropzone-previews" id="dropzonePreview"></div>
-        <h4 style="text-align: center;color:#428bca;">Arrastre aquí un 1 archivos a la vez no mayor a 1.5MB por archivo <span class="glyphicon glyphicon-hand-down"></span></h4>
+        <h4 style="text-align: center;color:#428bca;">Arrastre aquí un 1 archivo a la vez no mayor a 1.5MB por archivo <span class="glyphicon glyphicon-hand-down"></span></h4>
         
         
     </div>

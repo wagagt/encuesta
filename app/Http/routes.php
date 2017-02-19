@@ -24,6 +24,8 @@ Route::get('/', 'HomeController@index');
 Route::get('login', 'Auth\AuthController@getLogin');
 Route::post('login', ['uses' => 'Auth\AuthController@postLogin', 'as' => 'login']);
 
+Route::get('/form-institucion', function(){return view('forms-master.institucion');});
+Route::get('/form-unidad', function(){return view('forms-master.unidad');});
 
 Route::resource('file', 'FileController');
 /*

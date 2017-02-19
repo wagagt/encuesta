@@ -29,7 +29,7 @@
         <br />
 
         <div>
-            <h1><i class="fa fa-cubes" aria-hidden="true"></i> Stock-taking System</h1>
+            <h1><i class="fa fa-cubes" aria-hidden="true"></i> FICHA Electrónica</h1>
             <p>{{date('Y')}} All Rights Reserved. MapleLink</p>
         </div>
     </div>

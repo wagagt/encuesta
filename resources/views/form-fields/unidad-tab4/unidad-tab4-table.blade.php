@@ -1,6 +1,3 @@
-<div class="pull-right">
-            <i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i>
-</div>
 <div class="col-md-12">
     <table class="table table-striped table-bordered  jambo_table" id="empresas-table">
         <thead>
