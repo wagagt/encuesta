@@ -30,7 +30,7 @@
 
         <div>
             <h1><i class="fa fa-cubes" aria-hidden="true"></i> FICHA Electrónica</h1>
-            <p>{{date('Y')}} All Rights Reserved. MapleLink</p>
+            <p>{{date('Y')}} All Rights Reserved.</p>
         </div>
     </div>
     {!! Form::close() !!}
